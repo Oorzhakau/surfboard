@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surf board</title>
+  <link rel="stylesheet" href="./Surf board_files/main.css">
+<style>
+			@-webkit-keyframes spin {
+				0% { -webkit-transform: rotate(0deg); }
+				100% { -webkit-transform: rotate(360deg); }
+			}
+		
+			@keyframes spin {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg); }
+			}
+
+			input.bito-email-input:-webkit-autofill,
+			input.bito-email-input:-webkit-autofill:hover,
+			input.bito-email-input:-webkit-autofill:focus {
+			  -webkit-text-fill-color: rgb(255, 255, 255);
+			  transition: background-color 5000s ease-in-out 0s;
+			}
+			
+			#bito-body::-webkit-scrollbar,
+			#emptyDiv-inner::-webkit-scrollbar,
+			#loginParentDiv-outer::-webkit-scrollbar {
+			  width: 4px;
+			  border-radius: 24px;
+			  color: #7a8084;
+			}
+			
+			#bito-body::-webkit-scrollbar-thumb,
+			#emptyDiv-inner::-webkit-scrollbar-thumb,
+			#loginParentDiv-outer::-webkit-scrollbar-thumb {
+			  background: #888; 
+			}
+			
+			#bito-body::-webkit-scrollbar-thumb:hover,
+			#emptyDiv-inner::-webkit-scrollbar-thumb:hover,
+			#loginParentDiv-outer::-webkit-scrollbar-thumb:hover {
+			  background: #555; 
+			}
+
+			.login-network-error-container {
+				padding: 10px 16px 8px;
+				color: rgb(255 0 0);
+			}		
+			
+			#loader {
+				background-color: #00000085;
+				position: absolute;
+				width: 100%;
+				top: 0px;
+				left: 0px;
+				height: 300px;
+				align-items: center;
+				justify-content: center;
+				display: grid;
+				z-index: 3002;
+				opacity: 9999;
+			}
+			
+			.spinner {
+			  display: inline-block;
+				  width: 1.5rem;
+				  height: 1.5rem;
+				  vertical-align: text-bottom;
+				  border: 1.75px solid #fff;
+				  border-right-color: transparent;
+				  border-radius: 50%;
+				  animation: spinner-border .75s linear infinite;
+				  margin-top:-30px
+			}
+			
+			@keyframes spinner-border {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg); }
+			  }
+		</style></head>
+<body cz-shortcut-listen="true">
+  <div class="wrapper">
+    <section class="hero">
+      <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+              <a href="http://127.0.0.1:5500/index.html" class="logo__link">
+                <img src="./Surf board_files/Vector.svg" alt="Логотип" class="logo__img">
+              </a>
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="http://127.0.0.1:5500/index.html" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a href="http://127.0.0.1:5500/index.html" class="menu__link">Серфборды</a>
+                </li>
+                <li class="menu__item">
+                  <a href="http://127.0.0.1:5500/index.html" class="menu__link">Команда</a>
+                </li>
+                <li class="menu__item">
+                  <a href="http://127.0.0.1:5500/index.html" class="menu__link">Меню</a>
+                </li>
+                <li class="menu__item">
+                  <a href="http://127.0.0.1:5500/index.html" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="http://127.0.0.1:5500/index.html" class="menu__link">Как мы работаем</a>
+                </li>
+                <li class="menu__item">
+                  <a href="http://127.0.0.1:5500/index.html" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="contacts">
+              <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
+            </address>
+        </div>
+      </header>
+      <main class="hero-content">
+        <div class="container">
+          <div class="hero-section">
+            <h1 class="hero-section__title">Профессиональные доски для<br> серфинга</h1>
+            <p class="hero-section__subtitle">Самый большой выбор серфбордов в мире</p>
+            <button class="btn">Заказать</button>
+          </div>
+          <div class="hero-info">
+            <ul class="hero-info__list">
+              <li class="hero-info__item">
+                  <div class="feature__icon">
+                      <img src="./Surf board_files/surfboard.svg" alt="Доска">
+                  </div>
+                  <div class="feature__desc">Уникальный дизайн</div>
+              </li>
+              <li class="hero-info__item">
+                  <div class="feature__icon">
+                      <svg class="feature__icon-el">
+                          <use xlink="" href="./img/icons/sawmill.svg"></use>
+                      </svg>
+                  </div>
+                  <div class="feature__desc">Прочные материалы</div>
+              </li>
+              <li class="hero-info__item">
+                  <div class="feature__icon">
+                      <svg class="feature__icon-el">
+                          <use xlink="" href="./img/icons/car.svg"></use>
+                      </svg>
+                  </div>
+                  <div class="feature__desc">Быстрая доставка</div>
+              </li>
+
+          </ul>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="about"></section>
+    <section class="slider"></section>
+    <section class="team"></section>
+    <section class="menu"></section>
+    <section class="review"></section>
+    <section class="review"></section>
+    <div class="container sidebar__container" style="
+    background: red;
+    width: 100px;
+">
+      <aside class="sidebar">
+        <!-- <div class="container sidebar__container"> -->
+          <nav class="sidebar-menu">
+            <ul class="sidebar-menu__list">
+              <li class="sidebar-menu__item active"><a href="http://127.0.0.1:5500/index.html"></a></li>
+              <li class="sidebar-menu__item"><a href="http://127.0.0.1:5500/index.html"></a></li>
+              <li class="sidebar-menu__item"><a href="http://127.0.0.1:5500/index.html"></a></li>
+              <li class="sidebar-menu__item"><a href="http://127.0.0.1:5500/index.html"></a></li>
+              <li class="sidebar-menu__item"><a href="http://127.0.0.1:5500/index.html"></a></li>
+              <li class="sidebar-menu__item"><a href="http://127.0.0.1:5500/index.html"></a></li>
+              <li class="sidebar-menu__item"><a href="http://127.0.0.1:5500/index.html"></a></li>
+              <li class="sidebar-menu__item"><a href="http://127.0.0.1:5500/index.html"></a></li>
+              <li class="sidebar-menu__item"><a href="http://127.0.0.1:5500/index.html"></a></li>
+            </ul>
+          </nav>
+        <!-- </div> -->
+      </aside>
+    </div>
+  </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+         <div id="chromeperfectpixel-panel-container" class="chromeperfectpixel-panel-container" style="color: initial; font: initial; font-palette: initial; font-synthesis: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation-composition: initial; animation: initial; app-region: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; math-depth: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: initial; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-gutter: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-timeline-inset: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647 !important;"><div class="draggable-wrapper"><div class="chromeperfectpixel-panel attached-right attached-bottom chromeperfectpixel-locale-ru" id="chromeperfectpixel-panel" style="transition: max-height 0.3s linear 0s; right: 0px; bottom: 0px; top: auto;"><div class="chromeperfectpixel-panel-wrapper"><div class="chromeperfectpixel-panel-header"><button class="chromeperfectpixel-button-collapse chromeperfectpixel-button" title="">−</button><h1 class="chromeperfectpixel-title-container" style="background-image: url(&quot;chrome-extension://dkaagdgjmgdmbnecmcefdhjekcoceebi/assets/images/logo_32px.png&quot;);"></h1><div class="chromeperfectpixel-dropdown"><button class="chromeperfectpixel-button-menu chromeperfectpixel-button" style="background-image: url(&quot;chrome-extension://dkaagdgjmgdmbnecmcefdhjekcoceebi/assets/images/icons/menu.svg&quot;);"></button><div class="chromeperfectpixel-dropdown-body"><div class="chromeperfectpixel-dropdown-content"><ul><li>Настройки</li><li>Сообщить об ошибке</li><li>Обновить до PRO</li><li><b>Закрыть</b></li></ul></div></div></div></div><div class="chromeperfectpixel-panel-body"><div class="chromeperfectpixel-dropimage-wrapper" tabindex="0"><div class="chromeperfectpixel-panel-section chromeperfectpixel-panel-section--buttons"><div class="chromeperfectpixel-progressbar-area">Загрузка...</div><button class="chromeperfectpixel-button-actions chromeperfectpixel-button" title="Hotkey: Alt + S"><svg width="27px" height="15px" viewBox="0 0 24 13" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#C0C9D1"><g id="shown" fill-rule="nonzero"><path d="M11.872745,0.0321672355 C7.50102389,0.0321672355 3.53651877,2.29940273 0.611116529,5.98199659 C0.372403706,6.28370307 0.372403706,6.70520478 0.611116529,7.00691126 C3.53651877,10.693942 7.50102389,12.9611775 11.872745,12.9611775 C16.2444661,12.9611775 20.2089712,10.693942 23.1343735,7.01134812 C23.3730863,6.70964164 23.3730863,6.28813993 23.1343735,5.98643345 C20.2089712,2.29940273 16.2444661,0.0321672355 11.872745,0.0321672355 Z M12.1863481,11.0488908 C9.2843491,11.2219283 6.88785958,8.95469283 7.07040468,6.19940273 C7.22018528,3.92773038 9.16265236,2.08643345 11.5591419,1.94445392 C14.4611409,1.77141638 16.8576304,4.03865188 16.6750853,6.79394198 C16.5206241,9.06117747 14.578157,10.9024744 12.1863481,11.0488908 Z M12.0412482,8.94581911 C10.4779132,9.03899317 9.18605558,7.81885666 9.28902974,6.33694539 C9.36860068,5.11237201 10.4170648,4.12295222 11.7089225,4.04308874 C13.2722574,3.94991468 14.5641151,5.17005119 14.4611409,6.65196246 C14.3768893,7.8809727 13.3284252,8.87039249 12.0412482,8.94581911 Z" id="Shape"></path></g></svg></button><button class="chromeperfectpixel-button-actions chromeperfectpixel-button" title="Hotkey: Alt + C"><svg width="16px" height="15px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#C0C9D1"><g id="locked" transform="translate(-129.000000, -68.000000)" fill-rule="nonzero"><path d="M140.253918,74.6307915 C140.074892,74.4517989 139.857649,74.3623698 139.601854,74.3623698 L139.295216,74.3623698 L139.295216,72.5213661 C139.295216,71.3452541 138.873459,70.3354071 138.029675,69.4916571 C137.185959,68.6478735 136.176213,68.2259818 134.999933,68.2259818 C133.823687,68.2259818 132.813739,68.6478735 131.97009,69.4916235 C131.126306,70.3354071 130.704549,71.3452206 130.704549,72.5213661 L130.704549,74.3623698 L130.397776,74.3623698 C130.142183,74.3623698 129.924806,74.4517989 129.745813,74.6307915 C129.566821,74.8096497 129.477358,75.0270265 129.477358,75.2828549 L129.477358,80.8054967 C129.477358,81.06109 129.566854,81.278534 129.745813,81.4575601 C129.924806,81.6363847 130.142183,81.7259146 130.397776,81.7259146 L139.60209,81.7259146 C139.857884,81.7259146 140.075093,81.6364855 140.254153,81.4575601 C140.432978,81.278534 140.522608,81.06109 140.522608,80.8054967 L140.522608,75.2827541 C140.522743,75.0271273 140.432978,74.809784 140.253918,74.6307915 Z M137.454414,74.3623698 L132.545451,74.3623698 L132.545451,72.5213661 C132.545451,71.8438474 132.785194,71.2653288 133.264578,70.7860116 C133.74403,70.3066273 134.322448,70.0669855 135.000034,70.0669855 C135.677687,70.0669855 136.25597,70.3065937 136.735455,70.7860116 C137.214705,71.2652952 137.454414,71.8438474 137.454414,72.5213661 L137.454414,74.3623698 Z" id="Shape"></path></g></svg></button><button class="chromeperfectpixel-button-actions chromeperfectpixel-button" title="Hotkey: Alt + I"><svg width="17px" height="17px" viewBox="0 0 15 14" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#C0C9D1"><g id="uninversed" transform="translate(-209.000000, -68.000000)" fill-rule="nonzero"><path d="M220.171875,74.9759818 C220.171875,72.8759818 218.521875,71.2259818 216.421875,71.2259818 L216.421875,78.7259818 C218.521875,78.7259818 220.171875,77.0759818 220.171875,74.9759818 Z M221.671875,68.2259818 L211.171875,68.2259818 C210.346875,68.2259818 209.671875,68.9009818 209.671875,69.7259818 L209.671875,80.2259818 C209.671875,81.0509818 210.346875,81.7259818 211.171875,81.7259818 L221.671875,81.7259818 C222.496875,81.7259818 223.171875,81.0509818 223.171875,80.2259818 L223.171875,69.7259818 C223.171875,68.9009818 222.496875,68.2259818 221.671875,68.2259818 Z M221.671875,80.2259818 L216.421875,80.2259818 L216.421875,78.7259818 C214.321875,78.7259818 212.671875,77.0759818 212.671875,74.9759818 C212.671875,72.8759818 214.321875,71.2259818 216.421875,71.2259818 L216.421875,69.7259818 L221.671875,69.7259818 L221.671875,80.2259818 Z" id="Shape"></path></g></svg></button></div><div class="chromeperfectpixel-panel-section chromeperfectpixel-panel-section--origin"><div class="chromeperfectpixel-panel-origin"><div class="chromeperfectpixel-origin-coords"><h2 class="chromeperfectpixel-title">Положение:</h2><div class="chromeperfectpixel-origin-buttons"><div class="chromeperfectpixel-origin-row"><span class="chromeperfectpixel-button-coords"><button class="chromeperfectpixel-button" title="Hotkey: ↑"><svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000" fill-rule="nonzero"><g id="arrow-up" transform="translate(-70.000000, -149.000000)"><path d="M72.020079,152.10105 C71.7673751,151.845794 71.7673751,151.433133 72.0203292,151.177624 L75.5551005,147.61376 C75.8099225,147.356365 76.2250678,147.356365 76.4798897,147.61376 C76.7325936,147.869017 76.7325936,148.281677 76.4798897,148.536934 L73.4083854,151.639464 L76.4798897,154.741993 C76.7325936,154.99725 76.7325936,155.40991 76.4798897,155.665167 C76.3558263,155.790483 76.1923846,155.858214 76.0174951,155.858214 C75.8426764,155.858214 75.6792962,155.790538 75.5552511,155.665319 L72.020079,152.10105 Z M72.5649305,151.561147 C72.6084018,151.605057 72.6084018,151.67387 72.5651807,151.717527 L72.6426075,151.639463 L72.5649305,151.561147 Z" id="Shape-Copy-44" transform="translate(74.250000, 151.639464) rotate(90.000000) translate(-74.250000, -151.639464) "></path></g></svg></button></span></div><div class="chromeperfectpixel-origin-row"><span class="chromeperfectpixel-button-coords"><button class="chromeperfectpixel-button" title="Hotkey: ←"><svg width="5px" height="9px" viewBox="0 0 5 9" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000" fill-rule="nonzero"><g id="arrow-left" transform="translate(-38.000000, -181.000000)"><path d="M38.270079,185.85105 C38.0173751,185.595794 38.0173751,185.183133 38.2703292,184.927624 L41.8051005,181.36376 C42.0599225,181.106365 42.4750678,181.106365 42.7298897,181.36376 C42.9825936,181.619017 42.9825936,182.031677 42.7298897,182.286934 L39.6583854,185.389464 L42.7298897,188.491993 C42.9825936,188.74725 42.9825936,189.15991 42.7298897,189.415167 C42.6058263,189.540483 42.4423846,189.608214 42.2674951,189.608214 C42.0926764,189.608214 41.9292962,189.540538 41.8052511,189.415319 L38.270079,185.85105 Z M38.8149305,185.311147 C38.8584018,185.355057 38.8584018,185.42387 38.8151807,185.467527 L38.8926075,185.389463 L38.8149305,185.311147 Z" id="Shape-Copy-43"></path></g></svg></button></span><span class="chromeperfectpixel-button-coords"><button class="chromeperfectpixel-button-center chromeperfectpixel-button" title="Center layer horizontally"><svg width="9px" height="9px" viewBox="0 0 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="#000"><g id="center" transform="translate(-95.000000, -161.000000)"><rect id="Rectangle" x="95.421875" y="163.421875" width="7.59375" height="4.21875"></rect><rect id="Rectangle" x="99" y="161" width="0.25" height="8.4375"></rect></g></svg></button></span><span class="chromeperfectpixel-button-coords"><button class="chromeperfectpixel-button" title="Hotkey: ↓"><svg width="6px" height="9px" viewBox="0 0 6 9" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000" fill-rule="nonzero"><g id="arrow-right" transform="translate(-105.000000, -181.000000)"><path d="M105.770079,185.85105 C105.517375,185.595794 105.517375,185.183133 105.770329,184.927624 L109.305101,181.36376 C109.559922,181.106365 109.975068,181.106365 110.22989,181.36376 C110.482594,181.619017 110.482594,182.031677 110.22989,182.286934 L107.158385,185.389464 L110.22989,188.491993 C110.482594,188.74725 110.482594,189.15991 110.22989,189.415167 C110.105826,189.540483 109.942385,189.608214 109.767495,189.608214 C109.592676,189.608214 109.429296,189.540538 109.305251,189.415319 L105.770079,185.85105 Z M106.314931,185.311147 C106.358402,185.355057 106.358402,185.42387 106.315181,185.467527 L106.392608,185.389463 L106.314931,185.311147 Z" id="Shape-Copy-46" transform="translate(108.000000, 185.389464) scale(-1, 1) translate(-108.000000, -185.389464) "></path></g></svg></button></span></div><div class="chromeperfectpixel-origin-row"><span class="chromeperfectpixel-button-coords"><button class="chromeperfectpixel-button" title="Hotkey: ↓"><svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000" fill-rule="nonzero"><g id="arrow-down" transform="translate(-70.000000, -216.000000)"><path d="M72.020079,219.60105 C71.7673751,219.345794 71.7673751,218.933133 72.0203292,218.677624 L75.5551005,215.11376 C75.8099225,214.856365 76.2250678,214.856365 76.4798897,215.11376 C76.7325936,215.369017 76.7325936,215.781677 76.4798897,216.036934 L73.4083854,219.139464 L76.4798897,222.241993 C76.7325936,222.49725 76.7325936,222.90991 76.4798897,223.165167 C76.3558263,223.290483 76.1923846,223.358214 76.0174951,223.358214 C75.8426764,223.358214 75.6792962,223.290538 75.5552511,223.165319 L72.020079,219.60105 Z M72.5649305,219.061147 C72.6084018,219.105057 72.6084018,219.17387 72.5651807,219.217527 L72.6426075,219.139463 L72.5649305,219.061147 Z" id="Shape-Copy-47" transform="translate(74.250000, 219.139464) scale(1, -1) rotate(90.000000) translate(-74.250000, -219.139464) "></path></g></svg></button></span></div></div></div><div class="chromeperfectpixel-origin-inputs"><h2 class="chromeperfectpixel-title chromeperfectpixel-title-dark">Сброс</h2><div class="chromeperfectpixel-origin-column"><div class="chromeperfectpixel-origin-row"><div class="chromeperfectpixel-input"><input type="text" data-axis="x" size="2" maxlength="6" value="754"><label class="chromeperfectpixel-input-label">X</label></div></div><div class="chromeperfectpixel-origin-row"><div class="chromeperfectpixel-input"><input type="text" data-axis="y" size="2" maxlength="6" value="-8"><label class="chromeperfectpixel-input-label">Y</label></div></div><div class="chromeperfectpixel-origin-row chromeperfectpixel-origin-row--column"><div class="chromeperfectpixel-input chromeperfectpixel-input-number"><input type="text" value=""><div class="rc-input-number" title="Scale"><div class="rc-input-number-handler-wrap"><span unselectable="unselectable" role="button" aria-label="Increase Value" class="rc-input-number-handler rc-input-number-handler-up"><span unselectable="unselectable" class="rc-input-number-handler-up-inner"></span></span><span unselectable="unselectable" role="button" aria-label="Decrease Value" class="rc-input-number-handler rc-input-number-handler-down"><span unselectable="unselectable" class="rc-input-number-handler-down-inner"></span></span></div><div class="rc-input-number-input-wrap"><input role="spinbutton" aria-valuemin="0.1" aria-valuemax="10" aria-valuenow="1" class="rc-input-number-input" autocomplete="off" max="10" min="0.1" step="0.1" title="Scale" value="1.0"></div></div><label class="chromeperfectpixel-input-label">⤢</label></div></div></div></div></div><div class="chromeperfectpixel-section-opacity"><div class="chromeperfectpixel-section-opacity__titles"><h2 class="chromeperfectpixel-title">Прозрачность:</h2><h2 class="chromeperfectpixel-title chromeperfectpixel-title-dark">25%</h2></div><div aria-disabled="false" class="chromeperfectpixel-opacity"><span class="chromeperfectpixel-opacity__invisible"><span class="chromeperfectpixel-opacity__invisible">0</span></span><div class="chromeperfectpixel-opacity__track chromeperfectpixel-opacity__track--background"><div class="chromeperfectpixel-opacity__track chromeperfectpixel-opacity__track--active" style="left: 0%; width: 25%;"></div><span class="chromeperfectpixel-opacity__slider-container" style="position: absolute; left: 25%;"><span class="chromeperfectpixel-opacity--invisible"><span class="chromeperfectpixel-opacity__invisible">0.25</span></span><div aria-valuemax="1" aria-valuemin="0" aria-valuenow="0.25" class="chromeperfectpixel-opacity__slider" draggable="false" role="slider" tabindex="0"></div></span></div><span class="chromeperfectpixel-opacity__invisible"><span class="chromeperfectpixel-opacity__invisible">1</span></span></div><div class="chromeperfectpixel-initial-block"></div></div></div><div class="chromeperfectpixel-panel-section chromeperfectpixel-panel-section--layers"><h2 class="chromeperfectpixel-title">Слои:</h2><div class="chromeperfectpixel-dropdown"><div class="chromeperfectpixel-dropdown-button"><h2 class="chromeperfectpixel-title chromeperfectpixel-title-dark">Загрузить</h2><span class="chromeperfectpixel-dropdown-arrow"><svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" fill-rule="nonzero"><g id="Default---2+-layers-" transform="translate(-70.000000, -216.000000)"><path d="M72.020079,219.60105 C71.7673751,219.345794 71.7673751,218.933133 72.0203292,218.677624 L75.5551005,215.11376 C75.8099225,214.856365 76.2250678,214.856365 76.4798897,215.11376 C76.7325936,215.369017 76.7325936,215.781677 76.4798897,216.036934 L73.4083854,219.139464 L76.4798897,222.241993 C76.7325936,222.49725 76.7325936,222.90991 76.4798897,223.165167 C76.3558263,223.290483 76.1923846,223.358214 76.0174951,223.358214 C75.8426764,223.358214 75.6792962,223.290538 75.5552511,223.165319 L72.020079,219.60105 Z M72.5649305,219.061147 C72.6084018,219.105057 72.6084018,219.17387 72.5651807,219.217527 L72.6426075,219.139463 L72.5649305,219.061147 Z" id="Shape-Copy-47" transform="translate(74.250000, 219.139464) scale(1, -1) rotate(90.000000) translate(-74.250000, -219.139464) "></path></g></svg></span></div><div class="chromeperfectpixel-dropdown-body"><div class="chromeperfectpixel-dropdown-content"><ul><li>Загрузить</li><li>Вставить с URL</li><li>Вставить из буфера обмена</li></ul></div></div></div><div class="chromeperfectpixel-layers"><div class="chromeperfectpixel-layer chromeperfectpixel-layer--active" title="arnaud-mesureur-17OxKyThYPo-unsplash 1.jpg"><label class="chromeperfectpixel-layer-img-container"><img class="chromeperfectpixel-layer-img" src="blob:http://127.0.0.1:5500/fe1b129d-7c0a-47a7-aa37-73e205f7a701" alt=""><input type="radio" name="chromeperfectpixel-selectedLayer" checked=""><div class="chromeperfectpixel-layer-name">arnaud-mesureur-17OxKyThYPo-unsplash 1.jpg</div></label><button class="chromeperfectpixel-delete chromeperfectpixel-button"></button></div><div class="chromeperfectpixel-layer chromeperfectpixel-layer--new">Добавить слой</div></div></div><div class="chromeperfectpixel-panel-ads"><h2 class="chromeperfectpixel-title">При поддержке:</h2><h2 class="chromeperfectpixel-title chromeperfectpixel-title-dark chromeperfectpixel-title--disable-ads">Обновить до PRO</h2><div class="chromeperfectpixel-panel-ads-container"><iframe name="chromeperfectpixel-ad-window" sandbox="allow-scripts allow-popups" referrerpolicy="no-referrer" src="./Surf board_files/saved_resource.html"></iframe></div></div></div></div><span class="chromeperfectpixel-fileUploader-container"><input type="file" accept="image/*" multiple="" class="chromeperfectpixel-fileUploader"></span></div></div></div></div></body></html>

@@ -1,0 +1,11 @@
+.contacts {
+  &__phone {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  &:before {
+    content: url('../../img/main/Frame.svg');
+    padding-right: 5px;
+  }
+}
