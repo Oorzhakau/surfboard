@@ -1,0 +1,25 @@
+.benefits {
+  display: flex;
+  &__item {
+    flex: 1;
+    position: relative;
+    padding: 0 1%;
+    &:before {
+      content: url("../../img/section/combined_shape_2204.svg");
+      position: absolute;
+      top: 55px;
+      right: 0;
+      transform: translateX(50%);
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

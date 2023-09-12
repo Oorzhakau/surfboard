@@ -3,6 +3,8 @@ $baseFontSize:18px;
 
 $yellow:#FEDB3F;
 $yellow-hover:#fedb3fe9;
+$black: #292929;
+$grey: #F2F5F4;
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import './layout/normalize.css';
@@ -14,3 +16,7 @@ $yellow-hover:#fedb3fe9;
 @import './blocks/contacts';
 @import './blocks/sidebar';
 @import './blocks/features';
+@import './blocks/section';
+@import './blocks/headline';
+@import './blocks/benefits';
+@import './blocks/benefit';
