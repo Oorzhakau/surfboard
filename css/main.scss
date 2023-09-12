@@ -1,13 +1,16 @@
-$baseFontSize:18px;
 $containerWidth:940px;
+$baseFontSize:18px;
+
 $yellow:#FEDB3F;
 $yellow-hover:#fedb3fe9;
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import './layout/normalize.css';
-@import './layout/base.scss';
-@import './blocks/btn.scss';
-@import './blocks/hero.scss';
-@import './blocks/header.scss';
-@import './blocks/contacts.scss';
-@import './blocks/sidebar.scss';
+@import './layout/base';
+@import './blocks/hero';
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/btn';
+@import './blocks/contacts';
+@import './blocks/sidebar';
+@import './blocks/features';
