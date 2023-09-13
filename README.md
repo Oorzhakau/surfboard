@@ -5,7 +5,7 @@
 
 [One Page Scroll](https://www.figma.com/file/csBY5S9G1YArW4JK2Oxvwx/Surfboard?node-id=0%3A1).
 
-Ссылка на проект - https://github.com/Oorzhakau/surfboard
+Ссылка на проект - https://oorzhakau.github.io/surfboard/
 
 ### Технологии
 
