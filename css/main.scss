@@ -7,6 +7,8 @@ $black: #292929;
 $grey: #F2F5F4;
 $review: #F8FAF9;
 
+$z-fixed-menu: 100;
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import './layout/normalize.css';
 @import './layout/base';
@@ -15,7 +17,6 @@ $review: #F8FAF9;
 @import './blocks/menu';
 @import './blocks/btn';
 @import './blocks/contacts';
-@import './blocks/sidebar';
 @import './blocks/features';
 @import './blocks/section';
 @import './blocks/headline';
@@ -26,3 +27,4 @@ $review: #F8FAF9;
 @import './blocks/order';
 @import './blocks/form';
 @import './blocks/radio';
+@import './blocks/fixed_menu';

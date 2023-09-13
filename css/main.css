@@ -85,8 +85,8 @@ img {
 }
 
 .hero {
-  background: url("../../img/main/hero.png") center top no-repeat;
-  height: 100vh;
+  background: url("../img/main/hero.png") center top no-repeat;
+  height: 650px;
   min-height: 650px;
   color: white;
 }
@@ -184,42 +184,8 @@ img {
   font-size: 22px;
 }
 .contacts:before {
-  content: url("../../img/main/Frame.svg");
+  content: url("../img/main/Frame.svg");
   padding-right: 5px;
-}
-
-.sidebar {
-  position: fixed;
-  max-width: 940px;
-  z-index: 1;
-  right: calc(50% - 540px);
-  width: 50px;
-  height: 100%;
-  overflow: hidden;
-}
-.sidebar-menu {
-  position: relative;
-  top: 30%;
-}
-.sidebar-menu__item {
-  margin-left: 5px;
-  cursor: pointer;
-  margin-top: 1rem;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  background-color: white;
-}
-.sidebar .active:after {
-  content: "";
-  display: block;
-  position: relative;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  top: -5px;
-  left: -5px;
-  border: 2px solid white;
 }
 
 .features {
@@ -301,7 +267,7 @@ img {
   padding: 0 1%;
 }
 .benefits__item:before {
-  content: url("../../img/section/combined_shape_2204.svg");
+  content: url("../img/section/combined_shape_2204.svg");
   position: absolute;
   top: 55px;
   right: 0;
@@ -435,8 +401,8 @@ img {
 }
 
 .order-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("../../img/order/cta.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent), url("../../img/order/cta.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("../img/order/cta.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent), url("../img/order/cta.jpg");
   background-size: 1100px;
   background-repeat: no-repeat;
   background-position: center top -45px;
@@ -537,7 +503,7 @@ img {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("../../img/icons/checkmark.svg") center no-repeat;
+  background: url("../img/icons/checkmark.svg") center no-repeat;
 }
 
 .radio__elem {
@@ -568,4 +534,44 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 25%;
+  right: calc(50% - 500px);
+  z-index: 100;
+}
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
+}
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container--fixed-menu {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
