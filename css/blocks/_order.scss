@@ -1,7 +1,13 @@
 .order-section {
-  background-image: url('../../img/order/cta.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent), url('../../img/order/cta.jpg');
   background-size: 1100px;
   background-repeat: no-repeat;
-  background-position: center top -50px;
+  background-position: center top -45px;
+  filter: grayscale(0%);
   overflow: hidden;
+  padding: 60px 0px;
+}
+
+.order--title {
+  color: #fff;
 }

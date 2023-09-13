@@ -7,8 +7,18 @@
   font-size: 16px;
   text-transform: uppercase;
   z-index: 10;
+  text-decoration: none;
+  border: none;
   &:hover {
       background: $yellow-hover;
       transition: 0.5s;
+  }
+  &--theme--transparent {
+    background: transparent;
+    color: white;
+    font-weight: normal;
+    &:hover {
+      color:black;
+    }
   }
 }
