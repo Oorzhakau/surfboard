@@ -5,6 +5,7 @@ $yellow:#FEDB3F;
 $yellow-hover:#fedb3fe9;
 $black: #292929;
 $grey: #F2F5F4;
+$review: #F8FAF9;
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import './layout/normalize.css';
@@ -20,3 +21,6 @@ $grey: #F2F5F4;
 @import './blocks/headline';
 @import './blocks/benefits';
 @import './blocks/benefit';
+@import './blocks/reviews';
+@import './blocks/interactive-avatar';
+@import './blocks/order';
