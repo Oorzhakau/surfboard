@@ -95,7 +95,7 @@ img {
 }
 
 .hero {
-  background: url("../../img/main/hero.png") center top no-repeat;
+  background: url("../img/main/hero.png") center top no-repeat;
   height: 100%;
   min-height: 650px;
   color: white;
@@ -147,7 +147,7 @@ img {
   font-size: 22px;
 }
 .contacts:before {
-  content: url("../../img/main/Frame.svg");
+  content: url("../img/main/Frame.svg");
   padding-right: 5px;
 }
 

@@ -1,14 +1,15 @@
-.hero {
+.section-hero {
   background: url('../../img/main/hero.png') center top no-repeat;
-  height: 650px;
-  min-height: 650px;
+  background-size: cover;
   color: white;
+  padding: 25px 0px 50px 0px;
+}
+.hero {
   &__container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 24px 0 60px;
   }
   &__title-section {
     width: 46%;

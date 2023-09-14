@@ -84,12 +84,13 @@ img {
   margin: 0 auto;
 }
 
-.hero {
+.section-hero {
   background: url("../img/main/hero.png") center top no-repeat;
-  height: 650px;
-  min-height: 650px;
+  background-size: cover;
   color: white;
+  padding: 25px 0px 50px 0px;
 }
+
 .hero__container {
   height: 100%;
   display: -webkit-box;
@@ -102,7 +103,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 24px 0 60px;
 }
 .hero__title-section {
   width: 46%;
@@ -230,7 +230,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 105px 0;
 }
 .section__title {
   font-size: 48px;
@@ -284,6 +283,10 @@ img {
   display: none;
 }
 
+.benefit-section {
+  padding: 105px 0px;
+}
+
 .benefit {
   text-align: center;
 }
@@ -311,6 +314,10 @@ img {
   font-size: 27px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.reviews-section {
+  padding: 105px 0px;
 }
 
 .reviews--title {
@@ -403,7 +410,7 @@ img {
 .order-section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("../img/order/cta.jpg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent), url("../img/order/cta.jpg");
-  background-size: 1100px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top -45px;
   -webkit-filter: grayscale(0%);
@@ -437,7 +444,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+.form__row:last-child {
+  margin-bottom: 0px;
 }
 
 .form__block {
@@ -462,9 +472,8 @@ img {
 }
 .form__input--textarea {
   width: 450px;
-  height: 150px;
+  height: 160px;
   resize: none;
-  margin-bottom: 25px;
 }
 
 .form__title {
@@ -504,6 +513,9 @@ img {
 }
 .radio--checkbox .radio__visible:before {
   background: url("../img/icons/checkmark.svg") center no-repeat;
+}
+.radio:last-child {
+  margin-right: 0px;
 }
 
 .radio__elem {
@@ -547,6 +559,9 @@ img {
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0px;
 }
 .fixed-menu__link {
   width: 16px;

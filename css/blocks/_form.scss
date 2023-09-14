@@ -13,7 +13,10 @@
 
 .form__row {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .form__block {
@@ -35,9 +38,8 @@
   }
   &--textarea {
     width: 450px;
-    height: 150px;
+    height: 160px;
     resize: none;
-    margin-bottom: 25px;
   }
 }
 
