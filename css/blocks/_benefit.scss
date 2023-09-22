@@ -1,22 +1,22 @@
 .benefit-section {
-  padding: 105px 0px;
+  padding: rem(105px) rem(0px);
 }
 
 .benefit {
   text-align: center;
   &__image-wrapper {
     display: inline-block;
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     position: relative;
     background: $grey;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
   &__icon {
-    width: 68px;
-    height: 68px;
+    width: rem(68px);
+    height: rem(68px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,9 +24,9 @@
   }
   &__title {
     color: $black;
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
 }
 

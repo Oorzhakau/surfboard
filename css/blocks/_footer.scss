@@ -1,0 +1,11 @@
+.footer {
+  height: 100%;
+  color: black;
+  padding: rem(20px) rem(80px);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100%;
+  }
+}

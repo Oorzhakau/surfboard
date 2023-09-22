@@ -1,0 +1,22 @@
+.socials {
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item {
+    margin-left: 14px;
+    &:first-child {
+        margin-left: 0;
+    }
+  }
+  &__icon-img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: #B3B3B3;
+    &:hover {
+        fill: black;
+    }
+  }
+}

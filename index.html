@@ -9,7 +9,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="section section-hero">
+      <section class="section hero-section">
         <div class="container hero__container">
           <header class="header">
             <div class="logo">
@@ -41,10 +41,24 @@
                   <a href="" class="menu__link">Контакты</a>
                 </li>
               </ul>
-              </nav>
-              <address class="contacts">
-                <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
-              </address>
+            </nav>
+            <address class="contacts header__contacts">
+              <a href="tel:+78009039090">
+                <div class="contacts__phone">
+                  <div class="contacts__phone-icon">
+                    <svg class="contacts__phone-icon-img">
+                      <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+                  <a href="tel:+78009039090" class="contacts__phone-number">8 800 903 90 90</a>
+                </div>
+              </a>
+            </address>
+            <a href="" class="hamburger">
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+            </a>
           </header>
           <div class="hero__title-section">
             <h1 class="hero__main-title">Профессиональные доски для серфинга</h1>
@@ -239,6 +253,67 @@
             </div>
            </form>
         </div>
+      </section>
+      <section class="section map-section">
+        <div class="map">
+        </div>
+        <footer class="footer">
+          <div class="container footer__container">
+            <div class="contacts contacts--footer">
+              <address class="contacts__address">
+                Москва, ул.Новый Арбат, д.31/12
+              </address>
+              <div class="contacts__phone">
+                <div class="contacts__phone-icon">
+                  <svg class="contacts__phone-icon-img contacts__phone-icon-img--black">
+                    <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                  </svg>
+                </div>
+                <a href="tel:+78009039090" class="contacts__phone-number contacts__phone-number--footer">8 800 903 90 90</a>
+              </div>
+            </div>
+            <div class="socials">
+              <ul class="socials__list">
+                  <li class="socials__item">
+                      <a href="#" class="socials__link">
+                          <span class="socials__icon">
+                            <svg class="socials__icon-img">
+                              <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                            </svg>
+                          </span>
+                      </a>
+                  </li>
+                  <li class="socials__item">
+                      <a href="#" class="socials__link">
+                          <span class="socials__icon">
+                            <svg class="socials__icon-img">
+                              <use xlink:href="./img/icons/sprite.svg#fb"></use>
+                            </svg>
+                          </span>
+                      </a>
+                  </li>
+                  <li class="socials__item">
+                      <a href="#" class="socials__link">
+                          <span class="socials__icon">
+                            <svg class="socials__icon-img">
+                              <use xlink:href="./img/icons/sprite.svg#ig"></use>
+                            </svg>
+                          </span>
+                      </a>
+                  </li>
+                  <li class="socials__item">
+                      <a href="#" class="socials__link">
+                          <span class="socials__icon">
+                            <svg class="socials__icon-img">
+                              <use xlink:href="./img/icons/sprite.svg#tw"></use>
+                            </svg>
+                          </span>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
       </section>
     </div>
   </div>

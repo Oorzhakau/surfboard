@@ -7,7 +7,7 @@
     &:before {
       content: url("../../img/section/combined_shape_2204.svg");
       position: absolute;
-      top: 55px;
+      top: rem(55px);
       right: 0;
       transform: translateX(50%);
     }

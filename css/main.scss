@@ -1,19 +1,31 @@
 $containerWidth:940px;
 $baseFontSize:18px;
 
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+// colors
 $yellow:#FEDB3F;
 $yellow-hover:#fedb3fe9;
 $black: #292929;
 $grey: #F2F5F4;
 $review: #F8FAF9;
+$blue: #1968B1;
 
+// z-index
 $z-fixed-menu: 100;
+
+@import "./media";
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import './layout/normalize.css';
+
+// components
 @import './layout/base';
 @import './blocks/hero';
 @import './blocks/header';
+@import './blocks/hamburger';
 @import './blocks/menu';
 @import './blocks/btn';
 @import './blocks/contacts';
@@ -28,3 +40,5 @@ $z-fixed-menu: 100;
 @import './blocks/form';
 @import './blocks/radio';
 @import './blocks/fixed_menu';
+@import './blocks/footer';
+@import './blocks/socials';

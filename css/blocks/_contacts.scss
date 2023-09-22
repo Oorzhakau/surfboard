@@ -1,11 +1,40 @@
 .contacts {
+  &--footer {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  &__address {
+    font-size: rem(21px);
+  }
+  &__phone-icon {
+    padding-top: rem(5px);
+    &-img {
+      width: rem(16px);
+      height: rem(16px);
+      margin-right: rem(6px);
+      fill: white;
+      &--black {
+        fill: black;
+      }
+    }
+  }
   &__phone {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
+    display: flex;
+    align-items: center;
+    &-number {
+      flex: 1;
+      font-style: normal;
+      font-weight: bold;
+      font-size: rem(22px);
+      &--footer {
+        font-weight: normal;
+      }
+    }
+    // &:before {
+    //   content: url('../../img/main/Frame.svg');
+    //   padding-right: rem(5px);
+    // }
   }
-  &:before {
-    content: url('../../img/main/Frame.svg');
-    padding-right: 5px;
-  }
+    
 }

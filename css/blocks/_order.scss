@@ -2,10 +2,10 @@
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent), url('../../img/order/cta.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top -45px;
+  background-position: center top rem(-45px);
   filter: grayscale(0%);
   overflow: hidden;
-  padding: 60px 0px;
+  padding: rem(60px) rem(0px);
 }
 
 .order--title {

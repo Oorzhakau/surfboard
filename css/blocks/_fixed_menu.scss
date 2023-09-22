@@ -4,7 +4,7 @@
   right: calc(50% - 500px);
   z-index: $z-fixed-menu;
   &__item {
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 
     &--active {
       .fixed-menu__link {
@@ -12,21 +12,21 @@
       }
     }
     &:last-child {
-      margin-bottom: 0px;
+      margin-bottom: rem(0px);
     }
   }
   &__link {
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: rem(1px) solid transparent;
     display: block;
     position: relative;
     &:before {
       content: "";
       display: block;
-      width: 6px;
-      height: 6px;
+      width: rem(6px);
+      height: rem(6px);
       border-radius: 50%;
       position: absolute;
       background: #fff;

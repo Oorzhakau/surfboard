@@ -1,10 +1,10 @@
 .btn {
-  padding: 21px 41px;
+  padding: rem(21px) rem(41px);
   background: $yellow;
-  border-radius: 100px;
+  border-radius: rem(100px);
   color: #000000;
   font-weight: 800;
-  font-size: 16px;
+  font-size: rem(16px);
   text-transform: uppercase;
   z-index: 10;
   text-decoration: none;
