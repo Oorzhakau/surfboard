@@ -6,6 +6,9 @@
   filter: grayscale(0%);
   overflow: hidden;
   padding: rem(60px) rem(0px);
+  @include tablets {
+    padding: 0;
+  }
 }
 
 .order--title {

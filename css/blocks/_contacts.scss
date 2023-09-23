@@ -1,14 +1,22 @@
 .contacts {
+  @include phones {
+    margin-bottom: rem(10px);
+  }
   &--footer {
     display: flex;
     align-items: start;
     flex-direction: column;
+
+    @include phones {
+      align-items: center;
+    }
   }
   &__address {
     font-size: rem(21px);
   }
   &__phone-icon {
     padding-top: rem(5px);
+    flex-shrink: 0;
     &-img {
       width: rem(16px);
       height: rem(16px);
@@ -27,14 +35,10 @@
       font-style: normal;
       font-weight: bold;
       font-size: rem(22px);
+      white-space: nowrap;
       &--footer {
         font-weight: normal;
       }
     }
-    // &:before {
-    //   content: url('../../img/main/Frame.svg');
-    //   padding-right: rem(5px);
-    // }
-  }
-    
+  }    
 }

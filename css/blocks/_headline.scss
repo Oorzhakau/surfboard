@@ -1,6 +1,7 @@
 .headline {
   text-align: center;
   margin-bottom: rem(40px);
+ 
   &__title {
     margin-bottom: rem(15px);
     font-weight: bold;
@@ -8,5 +9,9 @@
   }
   &__subtitle {
     padding: 0 26%;
+    @include phones {
+      font-size: rem(18px);
+      padding: 0;
+    }
   }
 }
