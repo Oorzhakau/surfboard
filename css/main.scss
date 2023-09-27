@@ -10,11 +10,14 @@ $yellow:#FEDB3F;
 $yellow-hover:#fedb3fe9;
 $black: #292929;
 $grey: #F2F5F4;
+$dark-grey: #333537;
 $review: #F8FAF9;
 $blue: #1968B1;
 
 // z-index
 $z-fixed-menu: 100;
+$z-hamburger: 150;
+$z-overlay: 10;
 
 @import "./media";
 
@@ -44,3 +47,4 @@ $z-fixed-menu: 100;
 @import './blocks/map';
 @import './blocks/footer';
 @import './blocks/socials';
+@import './blocks/overlay';

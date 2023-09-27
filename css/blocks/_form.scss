@@ -15,10 +15,15 @@
 .form__col {
   flex: 1;
   margin-right: rem(20px);
+
   @include tablets {
     margin-right: rem(0px);
     margin-bottom: rem(10px);
+    &:last-child {
+      margin-bottom: rem(0px);
+    }
   }
+
   &:last-child {
     margin-right: rem(0px);
   }
