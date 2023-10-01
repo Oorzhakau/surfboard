@@ -11,12 +11,15 @@ $yellow-hover:#fedb3fe9;
 $black: #292929;
 $grey: #F2F5F4;
 $dark-grey: #333537;
+$light-grey: #F8FAF9;
 $review: #F8FAF9;
 $blue: #1968B1;
+$info-blue:#3A587E;
+$info-light-blue:#3465A3;
 
 // z-index
-$z-fixed-menu: 100;
-$z-hamburger: 150;
+$z-fixed-menu: 20;
+$z-hamburger: 30;
 $z-overlay: 10;
 
 @import "./media";
@@ -26,6 +29,7 @@ $z-overlay: 10;
 
 // components
 @import './layout/base';
+@import './blocks/body';
 @import './blocks/hero';
 @import './blocks/header';
 @import './blocks/logo';
@@ -37,6 +41,9 @@ $z-overlay: 10;
 @import './blocks/section';
 @import './blocks/headline';
 @import './blocks/benefits';
+@import './blocks/products';
+@import './blocks/slider';
+@import './blocks/parameters';
 @import './blocks/benefit';
 @import './blocks/reviews';
 @import './blocks/interactive-avatar';

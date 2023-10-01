@@ -1,0 +1,120 @@
+.slider {
+  position: relative;
+  
+  &__img-base {
+    position: absolute;
+    width: 45%;
+    top: 17%;
+    @include tablets {
+      top: 9%;
+      left: 30%;
+    }
+  }
+
+  &__img {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &__preview {
+    width: 50%;
+    max-width: rem(535px);
+  }
+
+  &__info {
+    margin-left: rem(44px);
+    flex: 1;
+
+    @include tablets {
+      margin-left: 0;
+      padding: 0 rem(120px);
+    }
+
+    @include tablets {
+      padding: 0 rem(50px);
+    }
+    @include phones {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(36px);
+    line-height: rem(43px);
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: rem(23px);
+    margin-top: rem(52px);
+
+    @include tablets {
+      margin-top: rem(10px);
+    }
+  }
+
+  &__desc {
+    margin-bottom: rem(24px);
+    margin-right: rem(33px);
+
+    @include tablets {
+      margin-right: 0;
+    }
+  }
+
+  &__size {
+    display: flex;
+    margin-bottom: rem(24px);
+
+    @include tablets {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+
+      &:not(:first-child) {
+        margin-left: rem(44px);
+      }
+    }
+
+    &-desc {
+      color: black;
+      font-weight: 700;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: flex-end;
+
+    @include tablets {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__price {
+    color: #151515;
+    font-weight: 300;
+    font-size: rem(60px);
+    line-height: rem(60px);
+    margin-right: rem(30px);
+  }
+}
+
