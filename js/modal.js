@@ -10,6 +10,8 @@ const validateForms = (form, fieldsArray) => {
   return errorFields.length === 0;
 }
 
+const fixedMenu = $(".fixed-menu");
+
 $(".form").submit(e => {
   e.preventDefault();
 
@@ -52,7 +54,8 @@ $(".form").submit(e => {
       $.fancybox.open({
         src: "#modal",
         type: "inline"
-      })
+      });
+      fixedMenu.hide();
     });
   }
 });
@@ -60,4 +63,5 @@ $(".form").submit(e => {
 $(".app-submit-btn").click(e => {
   e.preventDefault();
   $.fancybox.close();
+  fixedMenu.show(400);
 })
