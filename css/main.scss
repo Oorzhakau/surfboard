@@ -16,6 +16,7 @@ $review: #F8FAF9;
 $blue: #1968B1;
 $info-blue:#3A587E;
 $info-light-blue:#3465A3;
+$modal-bg: #333537;
 
 // z-index
 $z-fixed-menu: 20;
@@ -56,3 +57,4 @@ $z-overlay: 10;
 @import './blocks/footer';
 @import './blocks/socials';
 @import './blocks/overlay';
+@import './blocks/modal';

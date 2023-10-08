@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Surf board</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -232,10 +234,81 @@
                     </div>
                 </li>
                 <li class="slider__item">
+                  <div class="slider__preview">
+                    <img src="./img/products/stain.svg" alt="" class="slider__img-base"> 
+                    <img src="./img/products/shortboard.svg" alt="" class="slider__img">
+                  </div>
+                  <div class="slider__info">
+                    <div class="parameters">
+                      <a class="parameters__link">
+                        <svg class="parameters__arrows">
+                          <use xlink href="./img/products/sprite.svg#arrows"></use>
+                        </svg>
+                        <span class="parameters__title">Параметры</span>
+                      </a>
+                      <div class="parameters__menu">
+                          <ul class="parameters__list">
+                              <li class="parameters__item">
+                                  <svg class="parameters__icon">
+                                      <use xlink href="./img/products/sprite.svg#length"></use>
+                                  </svg>
+                                  <div class="parameters__desc">Длина доски</div>
+                                  <div class="parameters__data">от 1,5 м</div>
+                              </li>
+                              <li class="parameters__item">
+                                  <svg class="parameters__icon">
+                                      <use xlink href="./img/products/sprite.svg#width"></use>
+                                  </svg>
+                                  <div class="parameters__desc">Ширина доски</div>
+                                  <div class="parameters__data">от 30 см</div>
+                              </li>
+                              <li class="parameters__item">
+                                  <svg class="parameters__icon">
+                                      <use xlink href="./img/products/sprite.svg#thickness"></use>
+                                  </svg>
+                                  <div class="parameters__desc">Толщина</div>
+                                  <div class="parameters__data">8 см</div>
+                              </li>
+                              <li class="parameters__item">
+                                  <svg class="parameters__icon">
+                                      <use xlink href="./img/products/sprite.svg#life-time"></use>
+                                  </svg>
+                                  <div class="parameters__desc">Срок службы</div>
+                                  <div class="parameters__data">5 лет</div>
+                              </li>
+                              <li class="parameters__item">
+                                  <svg class="parameters__icon">
+                                      <use xlink href="./img/products/sprite.svg#weight"></use>
+                                  </svg>
+                                  <div class="parameters__desc">Вес</div>
+                                  <div class="parameters__data">7-8 кг</div>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                    <h2 class="slider__title">Шортборд</h2>
+                    <div class="slider__desc">
+                      <p>Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание 
+                        в трубах.</p>
+                    </div>
+                    <ul class="slider__size">
+                      <li class="slider__size-item">
+                        <span class="slider__size-title">Длина доски</span>
+                        <span class="slider__size-desc">от 1,5 <span>метров</span></span>
+                      </li>
+                      <li class="slider__size-item">
+                        <span class="slider__size-title">Ширина доски</span>
+                        <span class="slider__size-desc">от 30 <span>сантиметров</span> </span>
+                      </li>
+                    </ul>
+                    <div class="slider__footer">
+                      <div class="slider__price">12000 <span>₽</span></div>
+                      <button class="btn">Заказать</button>
+                    </div>
                 </li>
               </ul>
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </section>
       <section class="team-section">
@@ -432,39 +505,40 @@
         <div class="container order-container">
           <h2 class="section__title order--title">закажите доску</h2>
            <form action="" class="form">
+            <input type="hidden" name="to" value="send@mail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input class="form__input"></input>
+                  <input class="form__input" name="name"></input>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input class="form__input"></input>
+                  <input class="form__input" name="phone"></input>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Улица</div>
-                  <input class="form__input"></input>
+                  <input class="form__input" name="street"></input>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Дом</div>
-                  <input class="form__input"></input>
+                  <input class="form__input" name="home"></input>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Корпус</div>
-                  <input class="form__input"></input>
+                  <input class="form__input" name="part"></input>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Квартира</div>
-                  <input class="form__input"></input>
+                  <input class="form__input" name="flat"></input>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Этаж</div>
-                  <input class="form__input"></input>
+                  <input class="form__input" name="floor"></input>
                 </label>
               </div>
             </div>
@@ -472,24 +546,24 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea class="form__input form__input--textarea" name="comment"></textarea>
                 </label>
               </div>
               <div class="form__controls">
                 <label class="radio">
-                  <input type="radio" name="option" class="radio__elem">
+                  <input type="radio" name="option" class="radio__elem" name="payment">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Оплата наличными</div>
                 </label>
                 <label class="radio">
-                  <input type="radio" name="option" class="radio__elem">
+                  <input type="radio" name="option" class="radio__elem" name="payment">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Оплата картой</div>
                 </label>
               </div>
               <div class="form__controls">
                 <label class="radio radio--checkbox">
-                  <input type="checkbox" class="radio__elem">
+                  <input type="checkbox" class="radio__elem" name="call">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Не перезванивать</div>
                 </label>
@@ -613,9 +687,23 @@
       </nav>
     </div>
   </div>
+  <div id="modal" class="modal">
+    <div class="modal__container">
+      <div class="modal__content">
+        Сообщение отправлено
+      </div>
+      <div class="modal__button-container">
+        <a href="" class="btn app-submit-btn btn--theme--green">Закрыть</a>
+      </div>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/acco.js"></script>
   <script src="./js/tabs.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 </html>         

@@ -24,10 +24,6 @@
       top: 23%; 
     }
   }
-}
-
-
-.products {
   &__arrow-img {
     width: rem(25px);
     height: rem(40px);
@@ -66,4 +62,13 @@
         left: 81%;
       }
     }
+}
+
+
+.slider {
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
 }
