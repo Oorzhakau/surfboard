@@ -311,7 +311,7 @@
           <!-- </div> -->
         </div>
       </section>
-      <section class="team-section">
+      <section class="section team-section">
         <div class="container">
           <h2 class="section__title team-title">Команда</h2>
           <ul class="team team--version--desktop">
@@ -501,6 +501,29 @@
           </div>
         </div>
       </section>
+      <section class="section player-section">
+        <div class="container">
+          <h2 class="section__title player-title">как мы работаем</h2>
+          <div class="player-section__container">
+            <div class="player">
+              <div class="player__wrapper">
+                <div id="yt-player" class="player__elem"></div>
+                <div class="player__splash"></div>
+              </div>
+              <div class="player__controls">
+                <button class="player__start"></button>
+                <div class="player__playback">
+                  <button class="player__playback-button"></button>
+                </div>
+                <div class="player__duration">
+                  <span class="player__duration-completed">0:00</span> :
+                  <span class="player__duration-estimate">0:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section order-section">
         <div class="container order-container">
           <h2 class="section__title order--title">закажите доску</h2>
@@ -570,15 +593,15 @@
               </div>
               <div class="form__btns">
                 <input type="submit" value="Заказать" class="btn">
-                <input type="reset" value="Очистить" class="btn btn--theme--transparent">
+                <input type="reset" value="Очистить" id="btn-reset" class="btn btn--theme--transparent">
               </div>
             </div>
            </form>
         </div>
       </section>
       <section class="section map-section">
-          <div class="map">
-            <img src="./img/section/map.png" alt="карта" class="map-img">
+          <div id="map" class="map">
+            <!-- <img src="./img/section/map.png" alt="карта" class="map-img"> -->
           </div>
           <footer class="footer">
             <div class="container footer--container">
@@ -700,10 +723,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/menu.js"></script>
-  <script src="./js/acco.js"></script>
-  <script src="./js/tabs.js"></script>
-  <script src="./js/slider.js"></script>
-  <script src="./js/modal.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="./scripts/player.js"></script>
+  <script src="./scripts/menu.js"></script>
+  <script src="./scripts/acco.js"></script>
+  <script src="./scripts/tabs.js"></script>
+  <script src="./scripts/slider.js"></script>
+  <script src="./scripts/map.js"></script>
+  <script src="./scripts/modal.js"></script>
 </body>
 </html>         

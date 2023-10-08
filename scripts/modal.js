@@ -11,6 +11,7 @@ const validateForms = (form, fieldsArray) => {
 }
 
 const fixedMenu = $(".fixed-menu");
+const btnReset = $(".btn-reset");
 
 $(".form").submit(e => {
   e.preventDefault();
@@ -42,6 +43,7 @@ $(".form").submit(e => {
 
     request.done((data) => {
       content.text(data.message);
+      form[0].reset();
     });
 
     request.fail((data) => {

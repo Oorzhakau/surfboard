@@ -10,6 +10,12 @@
   }
 }
 
+.team-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .team--version--mobile {
   display: none;
   @include tablets {
@@ -22,7 +28,6 @@
 
 .team {
   &-title {
-    margin-top: rem(60px);
     margin-bottom: rem(30px);
   }
   &__item {
@@ -53,6 +58,9 @@
       margin-left: rem(4px);
       position: relative;
       top: rem(-2px);
+    }
+    &.active::after {
+      content: url("../../img/team/triangle.svg");
     }
   }
   &__content {
