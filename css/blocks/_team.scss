@@ -54,13 +54,14 @@
     font-weight: bold;
     &::after {
       content: url("../../img/team/rev_triangle.svg");
-      transform: rotate(180deg);
+      display: inline-block;
       margin-left: rem(4px);
       position: relative;
       top: rem(-2px);
     }
     &.active::after {
-      content: url("../../img/team/triangle.svg");
+      transform: rotate(180deg) translateY(-5px);
+      transition: all .3s;
     }
   }
   &__content {

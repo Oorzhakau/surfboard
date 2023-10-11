@@ -7,15 +7,18 @@
   &--not-active {
     display: none;
   }
-
-
+  
   &__item {
     margin-bottom: rem(5px);
 
     &--active {
       .fixed-menu__link {
         border-color: #fff;
+        &--shadowed{
+          border-color: black;
+        }
       }
+    
     }
     &:last-child {
       margin-bottom: rem(0px);
@@ -28,6 +31,7 @@
     border: rem(1px) solid transparent;
     display: block;
     position: relative;
+    
     &:before {
       content: "";
       display: block;
@@ -39,6 +43,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    &--shadowed:before{
+      background: black;
+      border-color: black;
     }
   }
 }

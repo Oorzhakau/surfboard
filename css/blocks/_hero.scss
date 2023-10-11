@@ -3,6 +3,8 @@
   background-size: cover;
   color: white;
   padding: rem(25px) rem(0px) rem(50px) rem(0px);
+  // height: 100vh;
+  height: 100%;
   @include tablets {
     background: url('../../img/main/hero.png') center top rem(50px) no-repeat;
     background-size: cover;
