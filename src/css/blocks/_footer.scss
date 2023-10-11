@@ -1,0 +1,28 @@
+.footer {
+  color: black;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: rem(20px) rem(80px);
+  @include tablets {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: rem(20px);
+  }
+  &--container {
+    display: flex;
+    width: 95%;
+    max-width: $containerWidth;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    @include phones {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.parameters__link {
+  background-color: $info-blue;
+}
+
+.parameters {
+  position: relative;
+  display: inline-block;
+  max-height: rem(180px);
+  @include tablets {
+      display: none;
+  }
+  &:hover .parameters__menu {
+      left: 0;
+      opacity: 1;
+  }
+  &__arrows {
+      width: rem(38px);
+      height: rem(38px);
+  }
+  &__title {
+      color: white;
+      text-transform: uppercase;
+      font-size: rem(14px);
+      margin-top: rem(8px);
+  }
+  &__link {
+      width: 90px;
+      height: 90px;
+      background: #3465A3;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+          background: #457bc1;
+      }
+  }
+  &__menu {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.80);
+      box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.06);
+      padding: rem(28px) rem(30px);
+      width: rem(290px);
+      left: rem(-9999px);
+      color: #1E1F20;
+      font-size: rem(16px);
+      font-weight: 500;
+      opacity: 0.8;
+      transition: opacity 1s;
+      border-radius: rem(4px);
+      margin-top: rem(-92px);
+      margin-left: rem(90px);
+  }
+  &__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: rem(8px);
+      &:last-child {
+          margin-bottom: 0;
+      }
+  }
+  &__icon {
+      width: 32px;
+      height: 32px;
+  }
+  &__desc {
+      margin-left: rem(12px);
+      color: black;
+      font-size: rem(16px);
+      font-weight: 700;
+  }
+  &__data {
+      flex: 1;
+      margin-left: rem(26px);
+      text-align: end;
+      color: black;
+  }
+}

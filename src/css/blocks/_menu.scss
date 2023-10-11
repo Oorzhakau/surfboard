@@ -1,0 +1,26 @@
+.menu {
+
+  @include tablets {
+    display: none;
+  }
+  
+  &__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: rem(0px) rem(30px);
+  }
+  &__item {
+    margin-right: rem(20px);
+    margin-bottom: rem(10px);
+
+    &:last-child {
+      margin-right: rem(0px);
+    }
+  }
+  &__link {
+    white-space: nowrap;
+  }
+}
