@@ -15,6 +15,8 @@
   margin: 0;
 
   @include phones {
+    top: rem(60px);
+    left: rem(6px);
     margin-left: rem(10px);
     font-size: rem(40px);
   }
@@ -37,7 +39,7 @@
   width: rem(100px);
 
   @include phones {
-    width: rem(90px);
+    width: rem(70px);
   }
 
   &:after {
